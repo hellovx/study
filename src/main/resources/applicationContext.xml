@@ -80,5 +80,8 @@
 
 	<!-- AOP注解配置 -->
 	<aop:aspectj-autoproxy />
+	
+	<!-- 定时器配置  -->
+	<import resource="spring-timertask.xml"/>
 
 </beans>

@@ -12,6 +12,7 @@
 	<properties>
 		<!-- 主要依赖库的版本定义 -->
 		<spring.version>4.1.4.RELEASE</spring.version>
+		<quartz.version>2.2.3</quartz.version>
 		<!-- Plugin的属性定义 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -70,6 +71,12 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 
@@ -206,6 +213,13 @@
 			<version>2.4</version>
 		</dependency>
 		<!-- fileupload end -->
+
+		<!-- 定时器  同时需要 spring-context-support-->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>${quartz.version}</version>
+		</dependency>
 
 
 

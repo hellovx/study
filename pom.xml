@@ -214,11 +214,17 @@
 		</dependency>
 		<!-- fileupload end -->
 
-		<!-- 定时器  同时需要 spring-context-support-->
+		<!-- 定时器 同时需要 spring-context-support -->
 		<dependency>
 			<groupId>org.quartz-scheduler</groupId>
 			<artifactId>quartz</artifactId>
 			<version>${quartz.version}</version>
+		</dependency>
+		<!-- ftp -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-ftp</artifactId>
+			<version>2.17.1</version>
 		</dependency>
 
 

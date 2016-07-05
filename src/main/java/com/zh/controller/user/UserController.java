@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping(value="user")
 @Controller
-public class User {
+public class UserController {
 
 	@RequestMapping(value="findUserList")
 	public String findUserList(){

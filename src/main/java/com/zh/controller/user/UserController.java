@@ -12,5 +12,11 @@ public class UserController {
 		System.out.println("hello user");
 		return "";
 	}
+	
+	@RequestMapping(value="findUserPage")
+	public String findUserPage(Integer page,Integer pageSize){
+		System.out.println(page);
+		return "123";
+	}
 
 }

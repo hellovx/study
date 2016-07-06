@@ -28,7 +28,7 @@
 		</property>
 	</bean>
 
-	<!-- 数据源配置,druid数据库连接池 -->
+	<!-- 数据源配置,阿里druid数据库连接池 -->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
 		<!-- Connection Info -->
